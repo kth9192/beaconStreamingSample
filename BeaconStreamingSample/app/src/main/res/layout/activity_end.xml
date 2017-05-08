@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/end_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영상이 끝났습니다! "
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/end_replay"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:scaleType="fitXY"
+        android:background="@drawable/roundbutton_style"
+        android:text="다시보기!"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/end_desc"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/end_back"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.AppCompat.Button"
+        android:scaleType="fitXY"
+        android:background="@drawable/roundbutton_style2"
+        android:text="그만보기!"
+        android:layout_below="@+id/end_replay"
+        android:layout_alignLeft="@+id/end_replay"
+        android:layout_alignStart="@+id/end_replay" />
+
+</RelativeLayout>
